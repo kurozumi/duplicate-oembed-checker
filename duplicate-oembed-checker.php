@@ -57,7 +57,7 @@ __EOS__;
 
 		if(isset($post->ID) && $post->ID != $_POST['post_ID']){
 			wp_send_json_success( array(
-				'body' => sprintf("<script>alert('%s');</script>%s", __("投稿済みです。", "duplicate-oembed-checker"), $url)
+				'body' => sprintf("<script>alert('%s');</script>%s", __("投稿済みのURLです。", "duplicate-oembed-checker"), $url)
 			) );
 		}
 	}
